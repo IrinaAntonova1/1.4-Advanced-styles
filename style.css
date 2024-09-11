@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: TTLakes;
+    list-style-type: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "TTLakes";
+    src: url("TTLakes/TTLakes-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "TTLakes";
+    src: url("TTLakes/TTLakes-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "TTLakes";
+    src: url("TTLakes/TTLakes-DemiBold.ttf");
+    font-weight: 600;
+}
+body {
+    width: 320px;
+}
+.header-hat {
+    background-color: #fff;
+    padding: 18px 24px;
+}
+.header__elements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.logo {
+    margin-left: 62px;
+}
+.btns {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    border: none;
+}
+
+.main-display__content {
+    padding: 28px 24px 16px;
+}
+.main-display__heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7E7E82;
+    position: relative;
+}
+.main-display__heading::before {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    background-color: #41F6D7;
+    top: -6px;
+    left: -24px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.navig__li {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+.navig__btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 16px 24px;
+}
+.navig__link:hover {
+    font-size: 130%;
+    opacity: 0.6;
+    transition-property: all;
+    transition-duration:  0.5s;
+}
+.lin:hover {
+    color: #1B1C21;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navig__link,
+.navig__link:active,
+.navig__link:visited {
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    width: 24px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.footer-contact {
+    background-color: #fff;
+    padding: 268px 24px 16px;
+}
+.footer__elements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.div-reference {
+   margin-left: 24px; 
+}
+.reference__elements {
+    color: #1B1C21;
+    font-weight: 600;
+    font-size: 16px;
+}
+.div-number {
+    margin: 12px 24px 40px 24px;
+}
+.number__elements {
+    color: #1B1C21;
+    font-weight: bold;
+    font-size: 24px;
+}
+.div-leng {
+    padding: 0px 24px 32px;
+}
+.lang__elements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+.l__elements {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+}
+.ru__btn {
+    color: #7E7E82;
+}
+.en__btn {
+    color: #1B1C21;
+}
+.ch__btn {
+    color: #1B1C21;
+}
