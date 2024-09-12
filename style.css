@@ -24,7 +24,9 @@
 }
 body {
     width: 320px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
 }
+
 .header-hat {
     background-color: #fff;
     padding: 18px 24px;
@@ -79,17 +81,7 @@ body {
     border: 1px solid transparent;
     padding: 16px 24px;
 }
-.navig__link:hover {
-    font-size: 130%;
-    opacity: 0.6;
-    transition-property: all;
-    transition-duration:  0.5s;
-}
-.lin:hover {
-    color: #1B1C21;
-    transition-property: all;
-    transition-duration: 0.5s;
-}
+
 .navig__link,
 .navig__link:active,
 .navig__link:visited {
@@ -98,9 +90,29 @@ body {
     line-height: 24px;
     font-weight: 600;
     width: 24px;
+    position: relative;
     transition-property: all;
     transition-duration: 0.5s;
 }
+.navig__link:hover {
+    color: rgba(126, 126, 130, 1);
+    transition-property: all;
+    transition-duration:  0.5s;
+}
+.navig__link:hover::before {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    background-color: #41F6D7;
+    top: -6px;
+    left: -24px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
 .footer-contact {
     background-color: #fff;
     padding: 268px 24px 16px;
